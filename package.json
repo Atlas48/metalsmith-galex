@@ -1,0 +1,23 @@
+{
+  "name": "metalsmith-galex",
+  "version": "0.1.0",
+  "description": "Metalsmith gallery extensions: XMP extension for creating a dataset linked to a page",
+  "main": "index.js",
+  "repository": "https://github.com/AtlasJan/metalsmith-galex",
+  "author": "Atlas <AtlasJan@gmx.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-livescript": "^3.0.1",
+    "livescript": "^1.6.0",
+    "mocha": "^6.1.4"
+  },
+  "peerDependencies": {
+    "metalsmith": "^2.3.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "exiftool-vendored": "^8.13.1"
+  }
+}

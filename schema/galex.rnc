@@ -1,0 +1,11 @@
+default namespace = "http://atlasjan.sdf.org/xml/galex.dtd"
+
+start =
+  element galex {
+    attribute extension { text },
+    attribute version { xsd:decimal },
+    element explicit { xsd:boolean },
+    element spoiler { xsd:boolean },
+    element include { xsd:boolean },
+    element comment { text }
+  }

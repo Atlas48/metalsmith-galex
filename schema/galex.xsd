@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://atlasjan.sdf.org/xml/galex.dtd" xmlns:galex.dtd="http://atlasjan.sdf.org/xml/galex.dtd">
+  <xs:element name="galex">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="galex.dtd:explicit"/>
+        <xs:element ref="galex.dtd:spoiler"/>
+        <xs:element ref="galex.dtd:include"/>
+        <xs:element ref="galex.dtd:comment"/>
+      </xs:sequence>
+      <xs:attribute name="extension" use="required"/>
+      <xs:attribute name="version" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="explicit" type="xs:boolean"/>
+  <xs:element name="spoiler" type="xs:boolean"/>
+  <xs:element name="include" type="xs:boolean"/>
+  <xs:element name="comment" type="xs:string"/>
+</xs:schema>
