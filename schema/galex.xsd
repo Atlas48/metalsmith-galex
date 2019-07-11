@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://atlasjan.sdf.org/xml/galex.dtd" xmlns:galex.dtd="http://atlasjan.sdf.org/xml/galex.dtd">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://atlasjan.sdf.org/xml/galex.xsd" xmlns:galex.xsd="http://atlasjan.sdf.org/xml/galex.xsd">
   <xs:element name="galex">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="galex.dtd:explicit"/>
-        <xs:element ref="galex.dtd:spoiler"/>
-        <xs:element ref="galex.dtd:include"/>
-        <xs:element ref="galex.dtd:comment"/>
+        <xs:element ref="galex.xsd:explicit"/>
+        <xs:element ref="galex.xsd:spoiler"/>
+        <xs:element ref="galex.xsd:include"/>
+        <xs:element ref="galex.xsd:comment"/>
       </xs:sequence>
       <xs:attribute name="extension" use="required"/>
       <xs:attribute name="version" use="required" type="xs:decimal"/>

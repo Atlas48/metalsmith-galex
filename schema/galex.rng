@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://relaxng.org/ns/structure/1.0"
-         ns="http://atlasjan.sdf.org/xml/galex.dtd"
-         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<grammar ns="http://atlasjan.sdf.org/xml/galex.xsd" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
-    <element>
-      <name ns="http://atlasjan.sdf.org/xml/galex.dtd">galex</name>
-      <attribute>
-        <name ns="">extension</name>
-        <text/>
-      </attribute>
-      <attribute>
-        <name ns="">version</name>
+    <element name="galex">
+      <attribute name="extension"/>
+      <attribute name="version">
         <data type="decimal"/>
       </attribute>
-      <element>
-        <name ns="http://atlasjan.sdf.org/xml/galex.dtd">explicit</name>
+      <element name="explicit">
         <data type="boolean"/>
       </element>
-      <element>
-        <name ns="http://atlasjan.sdf.org/xml/galex.dtd">spoiler</name>
+      <element name="spoiler">
         <data type="boolean"/>
       </element>
-      <element>
-        <name ns="http://atlasjan.sdf.org/xml/galex.dtd">include</name>
+      <element name="include">
         <data type="boolean"/>
       </element>
-      <element>
-        <name ns="http://atlasjan.sdf.org/xml/galex.dtd">comment</name>
+      <element name="comment">
         <text/>
       </element>
     </element>

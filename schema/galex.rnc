@@ -1,4 +1,4 @@
-default namespace = "http://atlasjan.sdf.org/xml/galex.dtd"
+default namespace = "http://atlasjan.sdf.org/xml/galex.xsd"
 
 start =
   element galex {

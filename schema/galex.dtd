@@ -2,22 +2,22 @@
 
 <!ELEMENT ns1:galex (ns1:explicit,ns1:spoiler,ns1:include,ns1:comment)>
 <!ATTLIST ns1:galex
-  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.dtd'
+  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.xsd'
   extension CDATA #REQUIRED
   version CDATA #REQUIRED>
 
 <!ELEMENT ns1:explicit (#PCDATA)>
 <!ATTLIST ns1:explicit
-  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.dtd'>
+  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.xsd'>
 
 <!ELEMENT ns1:spoiler (#PCDATA)>
 <!ATTLIST ns1:spoiler
-  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.dtd'>
+  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.xsd'>
 
 <!ELEMENT ns1:include (#PCDATA)>
 <!ATTLIST ns1:include
-  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.dtd'>
+  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.xsd'>
 
 <!ELEMENT ns1:comment (#PCDATA)>
 <!ATTLIST ns1:comment
-  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.dtd'>
+  xmlns:ns1 CDATA #FIXED 'http://atlasjan.sdf.org/xml/galex.xsd'>
