@@ -6,6 +6,9 @@
   "repository": "https://github.com/AtlasJan/metalsmith-galex",
   "author": "Atlas <AtlasJan@gmx.com>",
   "license": "MIT",
+  "scripts": {
+    "init-debug": "export DEBUG=metalsmith:*"
+  },
   "devDependencies": {
     "assert": "^2.0.0",
     "delete": "^1.1.0",
@@ -22,11 +25,15 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "exiftool-vendored": "^8.13.1",
+    "klaw-sync": "^6.0.0",
     "mime-db": "^1.40.0",
     "mime-lookup": "^0.0.2"
   },
   "engines": {
     "node": ">=4",
     "npm": ">=2"
+  },
+  "optionalDependencies": {
+    "chalk": "^2.4.2"
   }
 }
