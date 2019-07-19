@@ -1,12 +1,13 @@
-#TODO: Implement async mode once it's all set up
-
-require! cheerio
+require! <[ cheerio imagemagick /* gm */ ]>
 require! {
-  'exiftool-vendored':eft
   path:{basename}
   'klaw-sync':walk-sync
   fs:{readdir-sync}
+  util:promisify
 }
+
+imk = promisify imagemagick
+#TODO: work out how to use imagemagick to get galex data
 
 try
   require! chalk
@@ -26,13 +27,16 @@ function nc (x, y)
 
 module.exports = (options) ->
   options.directory = nc options.directory, \img
-  if options.async
-    console.wrn "Async option is currently unimplemented"
-  (files, data, metalsmith) ->
+  (files, data, metalsmith) ->>
     for filn, data of files
      id = basename filn .split \. [0]
      for i in readdir-sync options.directory + id, with-file-types: true
        if i.is-directory!
          console.wrn "Found #{dirent.name} in #id: skipping"
-         #TODO: rest of the code
+         continue
+       #TODO: rest of the code
+       try
+         tags=await eft.load i.name
+       catch
+         console.err "could not load #{i.name}: \"#{e.name}: #{e.message}\""
 

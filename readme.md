@@ -26,12 +26,6 @@ The directory, `img` contains subdirectories with the same names as files locate
 
 # Options
 ## Build
-###`async`
-
-`boolean`, **default:** `false`
-
-**[UNIMPLEMENTED]** Puts `metalsmith-galex` into async mode, using asynchronous functions instead.
-
 ###`directory`
 
 `string`, **default:** `"images"`
@@ -43,7 +37,7 @@ Path to the galex gallery
 
 `string` **default:** `basename(filename).split('.')[0]`
 
-Path to the gallery directory
+Overrides the path to the gallery directory
 
 # The Galex Namespace
 
