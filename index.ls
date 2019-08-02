@@ -1,13 +1,10 @@
-require! <[ cheerio imagemagick /* gm */ ]>
+require! <[ cheerio exiv2 ]>
 require! {
   path:{basename}
   'klaw-sync':walk-sync
   fs:{readdir-sync}
   util:promisify
 }
-
-imk = promisify imagemagick
-#TODO: work out how to use imagemagick to get galex data
 
 try
   require! chalk
@@ -34,7 +31,6 @@ module.exports = (options) ->
        if i.is-directory!
          console.wrn "Found #{dirent.name} in #id: skipping"
          continue
-       #TODO: rest of the code
        try
          tags=await eft.load i.name
        catch
