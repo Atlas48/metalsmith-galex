@@ -896,13 +896,13 @@ exiftool-vendored.pl@11.59.0:
   integrity sha512-olg6+88PlYNYtJ7kM+DiRNLZ1lcYyz7GCqwAvSF24gN6ib3ioZT62Ox301kIP8m6D6vD3RxOFweAQ8kGDxBYOA==
 
 exiftool-vendored@^8.19.0:
-  version "8.19.0"
-  resolved "https://registry.yarnpkg.com/exiftool-vendored/-/exiftool-vendored-8.19.0.tgz#71e120e8aaa17b95e0b53cfb51afa0db91976938"
-  integrity sha512-MfZku+Wl7HruSPhs5ba+b9JCf1FhR57fXouvOm/i4JIHZO8Ib9ocEhIONCqixjezHzcceuQNTLyTEAG9Jdr7vw==
+  version "8.20.0"
+  resolved "https://registry.yarnpkg.com/exiftool-vendored/-/exiftool-vendored-8.20.0.tgz#05f5f4af0944b67cd73284151ebe6d70119c90aa"
+  integrity sha512-vo6SLtcm+8XCoCKyVDeg4TpSdD3N6YuuN5lRhLYhk8liF9jAuVULSSLMBWbLZgc8G1K2s1EWIQmAYPLOQ+fmQw==
   dependencies:
     batch-cluster "^5.6.7"
     luxon "^1.17.2"
-    tz-lookup "^6.1.21"
+    tz-lookup "^6.1.23"
   optionalDependencies:
     exiftool-vendored.exe "11.59.0"
     exiftool-vendored.pl "11.59.0"
@@ -3271,7 +3271,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-tz-lookup@^6.1.21:
+tz-lookup@^6.1.23:
   version "6.1.23"
   resolved "https://registry.yarnpkg.com/tz-lookup/-/tz-lookup-6.1.23.tgz#e322372d7286b0d3a1e7345a4e3081c7b47d9f9c"
   integrity sha512-pskDfp3nyxa/8gs0fntFB+tuEP5FHehYBpBsED55Wy0qMsZbo6xXYvVKneik7rX69+PwGAgZSx+CjmYpBaWlLA==

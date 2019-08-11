@@ -22,17 +22,24 @@ function nc (x, y)
   if typeof x isnt \undefined and x isnt null then x
   else y
 
+function stob (s)
+  switch s
+    | \False, \false => false
+    | \True, \true   => true
+
 module.exports = (options) ->
-  options.directory = nc options.directory, \img
+  options.directory = nc options.directory, "#__dirname/img"
   (files, data, metalsmith) ->>
     for filn, data of files
      id = basename filn .split \. [0]
      for i in readdir-sync options.directory + id, with-file-types: true
        if i.is-directory!
-         console.wrn "Found #{dirent.name} in #id: skipping"
+         console.wrn "Found directory #{dirent.name} in #id: skipping"
          continue
        try
          tags=await eft.load i.name
        catch
-         console.err "could not load #{i.name}: \"#{e.name}: #{e.message}\""
+         console.err "Could not load #{i.name}: \"#{e.name}: #{e.message}\", skipping"
+         continue
+      continue unless stob tags.Include
 
