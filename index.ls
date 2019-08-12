@@ -4,6 +4,7 @@ require! {
   'klaw-sync':walk-sync
   fs:{readdir-sync}
   util:promisify
+  'mime-lookup'
 }
 
 try
@@ -29,6 +30,8 @@ function stob (s)
 
 module.exports = (options) ->
   options.directory = nc options.directory, "#__dirname/img"
+  if options.mimetypes
+    mime = new mime-lookup require \mime-db
   (files, data, metalsmith) ->>
     for filn, data of files
      id = basename filn .split \. [0]

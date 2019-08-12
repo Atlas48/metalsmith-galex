@@ -1,8 +1,8 @@
-%Image::Exiftool::UserDefined = (
+%Image::ExifTool::UserDefined = (
   'Image::ExifTool::XMP::Main' => {
     galex => { SubDirectory => { TagTable => 'Image::ExifTool::UserDefined::galex' }}
   }
-)
+);
 
 %Image::ExifTool::UserDefined::galex = (
     GROUPS => { 0 => 'XMP', 1 => 'XMP-galex', 2 => 'Image' },
