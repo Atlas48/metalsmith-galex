@@ -19,17 +19,13 @@ else
   console::err = (s) !-> @error "ERR: #s"
   console::wrn = (s) !-> @error "WRN: #s"
 
-function nc (x, y)
-  if typeof x isnt \undefined and x isnt null then x
-  else y
-
 function stob (s)
   switch s
     | \False, \false => false
     | \True, \true   => true
 
 module.exports = (options) ->
-  options.directory = nc options.directory, "#__dirname/img"
+  options.directory = options.directory ? "#__dirname/img"
   if options.mimetypes
     mime = new mime-lookup require \mime-db
   (files, data, metalsmith) ->>
