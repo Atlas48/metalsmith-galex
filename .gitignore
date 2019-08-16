@@ -56,3 +56,4 @@ $RECYCLE.BIN/
 !test/index.js
 *.tgz
 node_modules
+!gulpfile.js

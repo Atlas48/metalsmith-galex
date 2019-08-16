@@ -17,7 +17,6 @@
     "gulp": "^4.0.2",
     "gulp-livescript": "^3.0.1",
     "livescript": "^1.6.0",
-    "metalsmith-debug": "^1.2.0",
     "metalsmith-writemetadata": "^0.4.5",
     "mocha": "^6.1.4"
   },
@@ -26,8 +25,9 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.1.1",
     "exiftool-vendored": "^8.19.0",
-    "klaw-sync": "^6.0.0",
+    "metalsmith-debug": "^1.2.0",
     "mime-db": "^1.40.0",
     "mime-lookup": "^0.0.2"
   },
