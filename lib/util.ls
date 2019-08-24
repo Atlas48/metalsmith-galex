@@ -1,6 +1,8 @@
+/*
 function nc (x, y)
-  if x? then x
+  if typeof x isnt 'undefined' then x
   else y
+*/
 
 function bool-string (s)
   switch s

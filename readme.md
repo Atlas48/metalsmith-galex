@@ -9,7 +9,7 @@ Galex is also an XMP/XML namespace for catagorising and creating linked gallerie
 ## Build
 ###`directory`
 
-`string`, **default:** `"images"`
+`string`, **default:** `"./img"`
 
 Path to the galex gallery
 
@@ -19,6 +19,8 @@ Path to the galex gallery
 `string` **default:** `basename(filename).split('.')[0]`
 
 Overrides the path to the gallery directory
+
+**Planned for future implementation**
 
 #See Also
 
