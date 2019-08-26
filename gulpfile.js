@@ -12,7 +12,7 @@ function build(cb){
   cb();
 }
 function clean(cb){
-  del(['!([gG]ulpfile.js)', '*.js', '*.log', '*.tgz', '*.html'], cb);
+  del(['!([gG]ulpfile)*.js', '*.log', '*.tgz', '*.html'], cb);
 }
 module.exports.build = build;
 module.exports.clean = clean;
