@@ -13,6 +13,12 @@ Galex is also an XMP/XML namespace for catagorising and creating linked gallerie
 
 Path to the galex gallery
 
+###`mimetypes`
+
+`boolean`, **default:** `false`
+
+Option to include a `mimetype` field with the respective mimetype.
+
 ## Frontmatter
 ###`gallery`
 

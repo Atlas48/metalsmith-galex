@@ -29,6 +29,7 @@
     "debug": "^4.1.1",
     "exiftool-vendored": "^8.19.0",
     "metalsmith-debug": "^1.2.0",
+    "metalsmith-plugin-kit": "^1.0.1",
     "mime-db": "^1.40.0",
     "mime-lookup": "^0.0.2"
   },
